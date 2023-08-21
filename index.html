@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d2e15d65bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header>
+    <div class="logo"><img src="img/starbucks-logo.png" alt="logo"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's Now</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+   </header> 
+   <main>
+    <div class="startbucks-Information">
+        <h1>It's not just coffeee It's <strong>Startbucks</strong> </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+         repellendus facere nihil, mollitia nulla saepe dolorem sed commodi maxime? 
+         Qui soluta perspiciatis molestias accusamus,
+         quo neque ipsa, aperiam praesentium iure eveniet
+          exercitationem eligendi doloribus?</p>
+        <button>Learn More</button>
+        <nav class="row">
+      
+            <li> <a href="#"><img src="img/green.png" alt="starbucks-cup" onclick="sliderImg('img/green.png'); changeBgColor('#097b42')"> </a></li>
+            <li> <a href="#"><img src="img/pink.png" alt="starbucks-cup" onclick="sliderImg('img/pink.png');changeBgColor('#bb269e')"></a> </li>
+            <li> <a href="#"><img src="img/brown.png" alt="starbucks-cup" onclick="sliderImg('img/brown.png');changeBgColor('#c5aea0')"> </a></li>
+          </nav>
+    </div>
+    
+    <div class="left">
+        <img src="img/green.png" alt="starbucks-cups" id="cup" >
+        <nav class="icons">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+         </nav>
+    <div class="bubble">
+        
+    </div>
+    </div>
+   </main>
+</body>
+<script type="text/javascript">
+    function sliderImg(imagem) {
+        document.querySelector('#cup').src = imagem;
+    }
+
+    function changeBgColor(color) {
+      const bubble =  document.querySelector('.bubble')
+     bubble.style.background = color;
+    }
+</script>
+</html>
